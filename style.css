@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar .logo-img{
+    margin-left: 40px;
+   
+}
+.nav-menu{
+    
+    text-align:right;
+}
+
+.nav_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 20px;
+    display: flex;
+   
+   
+}
+
+.nav_menu ul li {
+   
+    margin-right: 20px;
+ text-transform: uppercase;
+
+}
+
+.nav_menu ul li:last-child {
+    margin-right: 0;
+}
+
+.logo-img img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+@media only screen and (max-width: 768px) {
+    .navbar .logo-img {
+        margin-left: 0; /* Remove left margin for the logo */
+    }
+    .nav_menu {
+        text-align: left; /* Center-align the menu items */
+    }
+    .nav_menu ul {
+        flex-direction: column; /* Stack menu items vertically */
+        justify-content: center; /* Center-align menu items vertically */
+    }
+    .nav_menu ul li {
+        margin: 10px 0; /* Add vertical space between menu items */
+    }
+}
